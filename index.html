@@ -51,7 +51,7 @@
         <p class="hero-subtitle">Porções generosas, bebidas bem geladas e um ambiente acolhedor. Venha nos visitar ou faça seu pedido agora!</p>
         <div class="hero-ctas">
           <a href="#" class="btn-primary"><i class="fa-brands fa-whatsapp"></i> Fazer Pedido / Reserva</a>
-          <a href="#cardapio" class="btn-secondary"><i class="fa-solid fa-utensils"></i> Ver Cardápio</a>
+          <button onclick="abrirModal()" class="btn-secondary"><i class="fa-solid fa-utensils"></i> Ver Cardápio</button>
         </div>
       </div>
     </div>
@@ -261,6 +261,69 @@
   </footer>
 
   <a href="#" class="fab-wpp"><i class="fa-brands fa-whatsapp"></i></a>
+
+
+  <div id="menuModal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Cardápio Completo</h2>
+        <button class="close-modal" onclick="fecharModal()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <h3 class="cat-title">Peixes & Porções</h3>
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="/peixe.webp" alt="Porção de Tilápia" onerror="this.src='https://images.unsplash.com/photo-1599084924616-e8b21cbdb473?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Porção de Tilápia</h4>
+            <p>Peixe frito na hora com farofa e limão.</p>
+            <span class="price">R$ 45,00</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Porção de Tilápia', 45.00)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?q=80&w=150&auto=format&fit=crop" alt="Isca de Carne c/ Fritas">
+          </div>
+          <div class="item-info">
+            <h4>Isca de Carne c/ Fritas</h4>
+            <p>Contra-filé acebolado com batata frita crocante.</p>
+            <span class="price">R$ 55,00</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Isca de Carne c/ Fritas', 55.00)">+</button>
+        </div>
+
+        <h3 class="cat-title">Bebidas</h3>
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="/cerveja.png" alt="Cerveja 600ml" onerror="this.src='https://images.unsplash.com/photo-1614316311855-33431d1d8112?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Cerveja 600ml (Amstel/Heineken)</h4>
+            <p>Estupidamente gelada.</p>
+            <span class="price">R$ 14,00</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Cerveja 600ml', 14.00)">+</button>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div id="cartItems" class="cart-items-container"></div>
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotalValue">R$ 0,00</span>
+        </div>
+        <button class="btn-wpp-green w-100" onclick="enviarPedidoWhatsApp()" id="btnFinalizar" disabled>
+          <i class="fa-brands fa-whatsapp"></i> Finalizar Pedido
+        </button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
