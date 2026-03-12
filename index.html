@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bar do Rubinho — O Sabor do Saraiva</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header id="navbar">
+    <div class="container">
+      <nav class="nav-inner">
+        <a href="#hero" class="nav-brand">
+          <img src="logo.jpg" alt="Logo Bar do Rubinho" class="nav-logo-img" id="logo-img">
+          <div class="nav-brand-text">
+            <span class="bar-do">Bar do</span>
+            <span class="rubinho">Rubinho</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#horario">Horários</a></li>
+          <li><a href="#footer">Localização</a></li>
+        </ul>
+        <a href="#" class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Pedido</a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#sobre" onclick="closeMobile()">Sobre Nós</a>
+      <a href="#cardapio" onclick="closeMobile()">Cardápio</a>
+      <a href="#horario" onclick="closeMobile()">Horários</a>
+      <a href="#footer" onclick="closeMobile()">Localização</a>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fa-solid fa-star"></i> Tradição desde 2003 — Saraiva</div>
+        <h1 class="hero-title">O melhor sabor<br/><em>do Saraiva</em> está aqui!</h1>
+        <p class="hero-subtitle">Porções generosas, bebidas bem geladas e um ambiente acolhedor. Venha nos visitar ou faça seu pedido agora!</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn-primary"><i class="fa-brands fa-whatsapp"></i> Fazer Pedido / Reserva</a>
+          <a href="#cardapio" class="btn-secondary"><i class="fa-solid fa-utensils"></i> Ver Cardápio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div style="position: relative;">
+          <div class="sobre-img-wrap">
+            <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=800&auto=format&fit=crop" alt="Pessoas brindando no bar" />
+          </div>
+          <div class="sobre-badge"><strong>20+</strong> anos de<br/>tradição</div>
+        </div>
+        <div class="sobre-text">
+          <span class="section-label">◆ Quem Somos</span>
+          <h2 class="section-title">Um boteco de <span>alma e sabor</span></h2>
+          <p>O Bar do Rubinho nasceu do amor por receber bem. Localizado no coração do Saraiva, em Uberlândia, somos o ponto de encontro de quem aprecia uma boa cerveja gelada e porções caprichadas.</p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-check"></i> Ambiente familiar e acolhedor</li>
+            <li><i class="fa-solid fa-check"></i> Cervejas e drinks sempre gelados</li>
+            <li><i class="fa-solid fa-check"></i> Porções generosas e saborosas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cardapio">
+    <div class="container">
+      <div class="cardapio-header">
+        <span class="section-label">◆ O que tem de bom</span>
+        <h2 class="section-title">Destaques do <span>Cardápio</span></h2>
+        <p>Escolha o seu favorito e peça agora pelo WhatsApp!</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="menu-card">
+          <div class="card-img">
+            <span class="card-img-label">🔥 Mais Pedido</span>
+            <img src="/peixe.webp" alt="Porção de Peixe Frito">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Porção de Tilápia</h3>
+            <p class="card-desc">Peixe frito na hora, sequinho por fora, suculento por dentro. Acompanha farofa e limão.</p>
+            <a href="#" class="card-cta">Pedir agora <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-img">
+            <span class="card-img-label">🍗 Especial</span>
+            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=600&auto=format&fit=crop" alt="Petiscos de carne e batata">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Petiscos Tradicionais</h3>
+            <p class="card-desc">Frango frito, isca de carne, mandioca crocante e muito mais. Para dividir (ou não)!</p>
+            <a href="#" class="card-cta">Pedir agora <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-img">
+            <span class="card-img-label">🍺 Gelada!</span>
+            <img src="/cerveja.png" alt="Copo de cerveja gelada">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Cervejas Trincando</h3>
+            <p class="card-desc">Longnecks e garrafas 600ml sempre na temperatura certa para aliviar o calor.</p>
+            <a href="#" class="card-cta">Ver opções <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <div class="card-img">
+            <span class="card-img-label">🍹 Refrescante</span>
+            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=600&auto=format&fit=crop" alt="Caipirinha">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Drinks & Caipirinhas</h3>
+            <p class="card-desc">Caipirinhas clássicas de limão e frutas da estação, preparadas com capricho.</p>
+            <a href="#" class="card-cta">Ver drinks <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="atmosfera">
+    <div class="container">
+      <span class="section-label">◆ O que os clientes dizem</span>
+      <h2 class="section-title">Quem vem, <span>volta sempre</span></h2>
+      <div class="atm-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Melhor peixe frito da cidade! Ambiente super agradável, atendimento rápido e preço justo."</p>
+          <div class="reviewer"><div class="reviewer-avatar">MR</div><div><div class="reviewer-name">Marcos R.</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Fui com minha família no domingo, porções enormes e gostosas! A cerveja chegou gelada rapidinho."</p>
+          <div class="reviewer"><div class="reviewer-avatar">AS</div><div><div class="reviewer-name">Ana S.</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Lugar de alma boa! O dono é super simpático, os petiscos são deliciosos e o preço é honesto."</p>
+          <div class="reviewer"><div class="reviewer-avatar">JP</div><div><div class="reviewer-name">João P.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="horario">
+    <div class="container">
+      <div class="horario-inner">
+
+        <div class="horario-visual">
+          <div class="clock-wrap">
+            <span class="clock-emoji">🕐</span>
+          </div>
+          <h3 style="font-family: var(--font-display); color: var(--bordo); margin-top: 1rem;">Planeje sua visita</h3>
+        </div>
+
+        <div>
+          <p class="section-tag">Quando nos encontrar</p>
+          <h2 class="section-title" style="margin-bottom: 0;">
+            Horário de<br/><span class="gold">Funcionamento</span>
+          </h2>
+          <span class="gold-line"></span>
+
+          <p id="statusBadge" class="status-closed">Calculando...</p>
+
+          <div class="horario-list">
+            <div class="horario-item">
+              <span class="horario-day">Segunda-feira</span>
+              <span class="closed-tag">Fechado</span>
+            </div>
+            <div class="horario-item">
+              <span class="horario-day">Terça-feira</span>
+              <span class="horario-time">17h às 23h</span>
+            </div>
+            <div class="horario-item">
+              <span class="horario-day">Quarta-feira</span>
+              <span class="horario-time">10h às 23h</span>
+            </div>
+            <div class="horario-item">
+              <span class="horario-day">Quinta-feira</span>
+              <span class="horario-time">10h às 23h</span>
+            </div>
+            <div class="horario-item">
+              <span class="horario-day">Sexta-feira</span>
+              <span class="horario-time">10h às 23h</span>
+            </div>
+            <div class="horario-item">
+              <span class="horario-day">Sábado</span>
+              <span class="horario-time">10h às 23h</span>
+            </div>
+            <div class="horario-item">
+              <span class="horario-day">Domingo</span>
+              <span class="horario-time">10h às 15h</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="cta-band">
+    <div class="container">
+      <h2 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 10px;">Bateu aquela fome? A gente resolve! 🍺</h2>
+      <p>Faça seu pedido pelo WhatsApp ou venha nos visitar no Saraiva.</p>
+      <div class="cta-band-btns">
+        <a href="#" class="btn-wpp-green"><i class="fa-brands fa-whatsapp"></i> Pedir pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="rubinho">Bar do Rubinho</div>
+          <p style="margin-top: 10px; font-size: 0.9rem; max-width: 400px;">O ponto de encontro para quem aprecia boa comida, bebida gelada e ótima companhia no coração do Saraiva, Uberlândia.</p>
+          <div class="social-row">
+            <a href="#" class="social-btn wpp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-btn inst"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Contato & Localização</h4>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i> <span>R. Tamôios, 780 — Saraiva<br/>Uberlândia – MG, 38408-410</span></li>
+            <li><i class="fa-brands fa-whatsapp"></i> <span>(34) 9 9999-9999</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div>
+          <h4 style="color: var(--gold); margin-top: 2rem; margin-bottom: 1rem; text-transform: uppercase; font-size: 0.8rem;"><i class="fa-solid fa-map-location-dot"></i> Como Chegar</h4>
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.248384216398!2d-48.2612711!3d-18.920409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a4450bbba28bb1%3A0xcf958a7ab2913e61!2sR.%20Tam%C3%B4ios%2C%20780%20-%20Saraiva%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038408-410!5e0!3m2!1spt-BR!2sbr!4v1709000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="fab-wpp"><i class="fa-brands fa-whatsapp"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
