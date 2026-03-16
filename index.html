@@ -19,7 +19,7 @@
     <div class="container">
       <nav class="nav-inner">
         <a href="#hero" class="nav-brand">
-          <img src="logo.jpg" alt="Logo Bar do Rubinho" class="nav-logo-img" id="logo-img">
+          <img src="/assets/logo.jpg" alt="Logo Bar do Rubinho" class="nav-logo-img" id="logo-img">
           <div class="nav-brand-text">
             <span class="bar-do">Bar do</span>
             <span class="rubinho">Rubinho</span>
@@ -89,53 +89,63 @@
       </div>
 
       <div class="cards-grid">
-        <article class="menu-card">
+        
+        <article class="menu-card reveal">
           <div class="card-img">
-            <span class="card-img-label">🔥 Mais Pedido</span>
-            <img src="/peixe.webp" alt="Porção de Peixe Frito">
+            <span class="card-img-label">🔥 MAIS PEDIDO</span>
+            <img src="/assets/peixe.webp" alt="Filé de Tilápia" onerror="this.src='https://images.unsplash.com/photo-1599084924616-e8b21cbdb473?q=80&w=600&auto=format&fit=crop'" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="card-body">
-            <h3 class="card-title">Porção de Tilápia</h3>
-            <p class="card-desc">Peixe frito na hora, sequinho por fora, suculento por dentro. Acompanha farofa e limão.</p>
-            <a href="#" class="card-cta">Pedir agora <i class="fa-solid fa-arrow-right"></i></a>
+            <h3 class="card-title">Filé de Tilápia</h3>
+            <p class="card-desc">O melhor e mais sequinho do Saraiva! 500g de filé sem espinhas. Acompanha molhos de rose e de limão.</p>
+            <a href="#" class="card-cta" onclick="adicionarAoCarrinho('Filé de Tilápia Tradicional', 33.90); abrirModal(); return false;">
+              Adicionar ao pedido <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </article>
 
-        <article class="menu-card">
+        <article class="menu-card reveal reveal-delay-1">
           <div class="card-img">
-            <span class="card-img-label">🍗 Especial</span>
-            <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=600&auto=format&fit=crop" alt="Petiscos de carne e batata">
+            <span class="card-img-label">🥓 O CLÁSSICO</span>
+            <img src="torresmo.jpg" alt="Torresmo com Mandioca" onerror="this.src='https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=600&auto=format&fit=crop'" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="card-body">
-            <h3 class="card-title">Petiscos Tradicionais</h3>
-            <p class="card-desc">Frango frito, isca de carne, mandioca crocante e muito mais. Para dividir (ou não)!</p>
-            <a href="#" class="card-cta">Pedir agora <i class="fa-solid fa-arrow-right"></i></a>
+            <h3 class="card-title">Torresmo c/ Mandioca</h3>
+            <p class="card-desc">400g de torresmo super crocante acompanhado de mandioca derretendo. Perfeito para dividir com os amigos.</p>
+            <a href="#" class="card-cta" onclick="adicionarAoCarrinho('Torresmo', 25.90); abrirModal(); return false;">
+              Adicionar ao pedido <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </article>
 
-        <article class="menu-card">
+        <article class="menu-card reveal reveal-delay-2">
           <div class="card-img">
-            <span class="card-img-label">🍺 Gelada!</span>
-            <img src="/cerveja.png" alt="Copo de cerveja gelada">
+            <span class="card-img-label">🍺 TRINCANDO!</span>
+            <img src="/assets/cerveja.png" alt="Cerveja Gelada" onerror="this.src='https://images.unsplash.com/photo-1614316311855-33431d1d8112?q=80&w=600&auto=format&fit=crop'" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="card-body">
-            <h3 class="card-title">Cervejas Trincando</h3>
-            <p class="card-desc">Longnecks e garrafas 600ml sempre na temperatura certa para aliviar o calor.</p>
-            <a href="#" class="card-cta">Ver opções <i class="fa-solid fa-arrow-right"></i></a>
+            <h3 class="card-title">Cervejas</h3>
+            <p class="card-desc">Garrafas de 600ml e Longnecks estupidamente geladas. Aquele padrão que o brasileiro respeita para aliviar o calor.</p>
+            <a href="#" class="card-cta" onclick="adicionarAoCarrinho('Cerveja 600ml (Amstel/Heineken)', 14.00); abrirModal(); return false;">
+              Adicionar ao pedido <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </article>
 
-        <article class="menu-card">
+        <article class="menu-card reveal reveal-delay-3">
           <div class="card-img">
-            <span class="card-img-label">🍹 Refrescante</span>
-            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=600&auto=format&fit=crop" alt="Caipirinha">
+            <span class="card-img-label">🍹 REFRESCANTE</span>
+            <img src="drinks.jpg" alt="Caipirinhas e Drinks" onerror="this.src='https://images.unsplash.com/photo-1536935338788-846bb9981813?q=80&w=600&auto=format&fit=crop'" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
           <div class="card-body">
             <h3 class="card-title">Drinks & Caipirinhas</h3>
-            <p class="card-desc">Caipirinhas clássicas de limão e frutas da estação, preparadas com capricho.</p>
-            <a href="#" class="card-cta">Ver drinks <i class="fa-solid fa-arrow-right"></i></a>
+            <p class="card-desc">Caipirinhas clássicas de limão e frutas da estação, preparadas no capricho para acompanhar as porções.</p>
+            <a href="#" class="card-cta" onclick="abrirModal(); return false;">
+              Ver opções <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </article>
+
       </div>
     </div>
   </section>
@@ -246,7 +256,7 @@
           <h4>Contato & Localização</h4>
           <ul>
             <li><i class="fa-solid fa-location-dot"></i> <span>R. Tamôios, 780 — Saraiva<br/>Uberlândia – MG, 38408-410</span></li>
-            <li><i class="fa-brands fa-whatsapp"></i> <span>(34) 9 9999-9999</span></li>
+            <li><i class="fa-brands fa-whatsapp"></i> <span>(34) 3084-3915</span></li>
           </ul>
         </div>
       </div>
@@ -274,43 +284,210 @@
 
       <div class="modal-body">
         <h3 class="cat-title">Peixes & Porções</h3>
-        <div class="menu-item">
+
+        <div class="menu-item" style="background: rgba(229,169,26,0.05); border: 1px solid rgba(229,169,26,0.2); padding: 1rem; border-radius: 8px;">
           <div class="item-thumb">
-            <img src="/peixe.webp" alt="Porção de Tilápia" onerror="this.src='https://images.unsplash.com/photo-1599084924616-e8b21cbdb473?q=80&w=150&auto=format&fit=crop'">
+            <img src="/assets/peixe.webp" alt="Filé de Tilápia Tradicional" onerror="this.src='https://images.unsplash.com/photo-1599084924616-e8b21cbdb473?q=80&w=150&auto=format&fit=crop'">
           </div>
           <div class="item-info">
-            <h4>Porção de Tilápia</h4>
-            <p>Peixe frito na hora com farofa e limão.</p>
-            <span class="price">R$ 45,00</span>
+            <h4>Filé de Tilápia Tradicional <i class="fa-solid fa-star" style="color: var(--gold); font-size: 0.8rem;"></i></h4>
+            <p><strong style="color: #d97706;">O melhor e mais sequinho de Uberlândia!</strong> 500g de filé de tilápia frito, corte especial sem espinhas. Acompanha molhos rose e limão.</p>
+            <span class="price">R$ 59,90</span>
           </div>
-          <button class="add-btn" onclick="adicionarAoCarrinho('Porção de Tilápia', 45.00)">+</button>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Filé de Tilápia Tradicional', 33.90)">+</button>
         </div>
 
         <div class="menu-item">
           <div class="item-thumb">
-            <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?q=80&w=150&auto=format&fit=crop" alt="Isca de Carne c/ Fritas">
+            <img src="/assets/maia.png" alt="Mini-Maia Recheada" onerror="this.src='https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=150&auto=format&fit=crop'">
           </div>
           <div class="item-info">
-            <h4>Isca de Carne c/ Fritas</h4>
-            <p>Contra-filé acebolado com batata frita crocante.</p>
-            <span class="price">R$ 55,00</span>
+            <h4>Mini-Maia Recheada</h4>
+            <p>15 unidades de prensados de carne moída recheado com queijo muçarela.</p>
+            <span class="price">R$ 22,90</span>
           </div>
-          <button class="add-btn" onclick="adicionarAoCarrinho('Isca de Carne c/ Fritas', 55.00)">+</button>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Mini-Maia Recheada', 22.90)">+</button>
         </div>
 
-        <h3 class="cat-title">Bebidas</h3>
         <div class="menu-item">
           <div class="item-thumb">
-            <img src="/cerveja.png" alt="Cerveja 600ml" onerror="this.src='https://images.unsplash.com/photo-1614316311855-33431d1d8112?q=80&w=150&auto=format&fit=crop'">
+            <img src="kibe.jpg" alt="Kibe com Queijo" onerror="this.src='https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=150&auto=format&fit=crop'">
           </div>
           <div class="item-info">
-            <h4>Cerveja 600ml (Amstel/Heineken)</h4>
-            <p>Estupidamente gelada.</p>
-            <span class="price">R$ 14,00</span>
+            <h4>Kibe com Queijo</h4>
+            <p>20 unidades de kibes recheados com queijo.</p>
+            <span class="price">R$ 19,90</span>
           </div>
-          <button class="add-btn" onclick="adicionarAoCarrinho('Cerveja 600ml', 14.00)">+</button>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Kibe com Queijo', 19.90)">+</button>
         </div>
-      </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="pastel.jpg" alt="Mini Pastel" onerror="this.src='https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Mini Pastel</h4>
+            <p>20 unidades de pasteizinhos, nas opções carne, queijo e misto.</p>
+            <span class="price">R$ 19,90</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Mini Pastel', 19.90)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="torresmo.jpg" alt="Torresmo" onerror="this.src='https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Torresmo</h4>
+            <p>400g de Torresmo com mandioca para acompanhar.</p>
+            <span class="price">R$ 25,90</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Torresmo', 25.90)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="costelinha.jpg" alt="Costelinha" onerror="this.src='https://images.unsplash.com/photo-1544025162-83501a5d625b?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Costelinha</h4>
+            <p>400g de costelinha suína com mandioca para acompanhar.</p>
+            <span class="price">R$ 27,50</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Costelinha', 27.50)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="bolinho-carne.jpg" alt="Bolinho de Mandioca" onerror="this.src='https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Bolinho de Mandioca com Carne Seca</h4>
+            <p>20 unidades de bolinho de carne seca com mandioca.</p>
+            <span class="price">R$ 22,90</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Bolinho Mandioca/Carne Seca', 22.90)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="bolinho-bacalhau.jpg" alt="Bolinho de Bacalhau" onerror="this.src='https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Bolinho de Bacalhau</h4>
+            <p>20 unidades de bolinho com recheio de bacalhau desfiado.</p>
+            <span class="price">R$ 27,90</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Bolinho de Bacalhau', 27.90)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="batata.jpg" alt="Batata Frita" onerror="this.src='https://images.unsplash.com/photo-1576107232684-1279f390859f?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Batata Frita</h4>
+            <p>500g de batata frita com sal.</p>
+            <span class="price">R$ 16,90</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Batata Frita', 16.90)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="bolinho-arroz.jpg" alt="Bolinho de Arroz" onerror="this.src='https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Bolinho de Arroz</h4>
+            <p>20 unidades de bolinho de arroz recheados com queijo.</p>
+            <span class="price">R$ 20,90</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Bolinho de Arroz', 20.90)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="bolinho-arroz-meia.jpg" alt="Bolinho de Arroz 1/2" onerror="this.src='https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Bolinho de Arroz ½</h4>
+            <p>10 unidades de bolinho de arroz recheados com queijo.</p>
+            <span class="price">R$ 14,50</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Bolinho de Arroz 1/2', 14.50)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="salada-jilo.jpg" alt="Salada de Jiló" onerror="this.src='https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Salada de Jiló</h4>
+            <p>Salada de jiló temperada e curtida em rodelas bem finas. 300g aproximadamente.</p>
+            <span class="price">R$ 7,00</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Salada de Jiló', 7.00)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="salada-jilo-meia.jpg" alt="Salada de Jiló 1/2" onerror="this.src='https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Salada de Jiló ½</h4>
+            <p>Uma versão menor da salada de jiló temperada. 150g aproximadamente.</p>
+            <span class="price">R$ 4,00</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Salada de Jiló 1/2', 4.00)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="figado-jilo.jpg" alt="Fígado com Jiló" onerror="this.src='https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Fígado com Jiló</h4>
+            <p>400g de fígado bovino cozido com cebola e jiló.</p>
+            <span class="price">R$ 23,90</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Fígado com Jiló', 23.90)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="figado-jilo-meio.jpg" alt="Fígado com Jiló 1/2" onerror="this.src='https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Fígado com Jiló ½</h4>
+            <p>200g de fígado bovino cozido com cebola e jiló.</p>
+            <span class="price">R$ 15,90</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Fígado com Jiló 1/2', 15.90)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="salada-guariroba.jpg" alt="Salada de Guariroba" onerror="this.src='https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Salada de Guariroba</h4>
+            <p>Salada feita com tomate, jiló e guariroba.</p>
+            <span class="price">R$ 19,90</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Salada de Guariroba', 19.90)">+</button>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-thumb">
+            <img src="salada-mista.jpg" alt="Salada" onerror="this.src='https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=150&auto=format&fit=crop'">
+          </div>
+          <div class="item-info">
+            <h4>Salada</h4>
+            <p>Salada feita com cenoura, tomate, jiló e muçarela.</p>
+            <span class="price">R$ 14,90</span>
+          </div>
+          <button class="add-btn" onclick="adicionarAoCarrinho('Salada Mista', 14.90)">+</button>
+        </div>
 
       <div class="modal-footer">
         <div id="cartItems" class="cart-items-container"></div>
